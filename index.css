@@ -3,6 +3,10 @@
   background-color: #f2f3f4;
 }
 
+#page-title{
+  font-weight: 500;
+}
+
 #billing-form{
   display:flex;
   flex-direction: column;
@@ -21,7 +25,7 @@
 }
 
 .form-label{
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .header{
