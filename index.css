@@ -8,19 +8,21 @@
 }
 
 #billing-form{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  display:grid;
+  place-items: center;
   background-color: #f2f3f4;
   padding-top: 2rem;
 }
 
-.form-inputs{
-  margin-bottom: 1rem;
-  width:min-content;
+.form-group{
+  display: flex;
+  width:20rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
-.form-button{
+.form-inputs{
   width:min-content;
 }
 

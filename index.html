@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>3DS-SDK-INTEGRATION</title>
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="page-content">
@@ -14,47 +14,59 @@
         <p class="header-items">Contact</p>
       </div>
       <form id="billing-form" action="" method="post">
-        <h2 id='page-title'>Card Verification Form</h2>
-        <label class="form-label" for="x_amount">Amount</label>
-        <input
-          class="form-inputs"
-          type="text"
-          name="x_amount"
-          data-threeds="amount"
-          value="20"
-        />
-        <label class="form-label" for="x_card_num">Card Number</label>
-        <input
-          class="form-inputs"
-          type="text"
-          name="x_card_num"
-          value="4539225011794489"
-          data-threeds="pan"
-        />
-        <label class="form-label" for="x_exp_month">Expiration Month</label>
-        <input
-          class="form-inputs"
-          type="text"
-          name="x_exp_month"
-          value="1"
-          data-threeds="month"
-        />
-        <label class="form-label" for="x_exp_year">Expiration Year</label>
-        <input
-          class="form-inputs"
-          type="text"
-          name="x_exp_year"
-          value="22"
-          data-threeds="year"
-        />
-        <label class="form-label" for="x_billing_line1">Billing Address</label>
-        <input
-          class="form-inputs"
-          type="text"
-          name="x_billing_line1"
-          value=""
-          data-threeds="billingLine1"
-        />
+        <h2 id="page-title">Card Verification Form</h2>
+        <div class="form-group">
+          <label class="form-label" for="x_amount">Amount</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="x_amount"
+            data-threeds="amount"
+            value="20"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="x_card_num">Card Number</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="x_card_num"
+            value="4539225011794489"
+            data-threeds="pan"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="x_exp_month">Expiration Month</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="x_exp_month"
+            value="1"
+            data-threeds="month"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="x_exp_year">Expiration Year</label>
+          <input
+            class="form-inputs"
+            type="text"
+            name="x_exp_year"
+            value="22"
+            data-threeds="year"
+          />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="x_billing_line1"
+            >Billing Address</label
+          >
+          <input
+            class="form-inputs"
+            type="text"
+            name="x_billing_line1"
+            value=""
+            data-threeds="billingLine1"
+          />
+        </div>
       </form>
     </div>
 
@@ -63,7 +75,7 @@
     <script>
       var tds = new ThreeDS(
         "billing-form",
-        "API-KEY-HERE",
+        "api_key_here",
         null,
         {
           endpoint: "https://api-sandbox.3dsintegrator.com/v2",
