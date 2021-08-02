@@ -35,11 +35,10 @@
   align-items: center;
   justify-content: space-around;
   background-color: inherit;
-  height:4rem;
+  height:3.5rem;
   width: 100vw;
   background-color: #222222;
   background-image: linear-gradient(rgb(60, 60, 60) 0px, rgb(34,34,34) 100);
-  text-transform: uppercase;
   color: lightgray;
 }
 
@@ -49,4 +48,5 @@
 
 .header-items{
   background-color: inherit;
+  font-size: 1rem;
 }
